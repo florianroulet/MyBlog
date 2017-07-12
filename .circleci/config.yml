@@ -15,5 +15,4 @@ jobs:
       - deploy:
           production:
             branch: master
-            commands:
-              - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
+            command: git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
