@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Personnal thoughts</title>
+    <link>https://florianroulet.github.io/MyBlog/blog/</link>
+    <description>Recent content in Blogs on Personnal thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://florianroulet.github.io/MyBlog/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://florianroulet.github.io/MyBlog/blog/20170709-makerfairenantes2017/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://florianroulet.github.io/MyBlog/blog/20170709-makerfairenantes2017/</guid>
+      <description>Maker Faire Nantes 2017 Open source ecologie www.opensourceecologie.org projet en cours : solar ose. centrale solaire DIY de génération de chaleur. peut permettre de faire de la vapeur pour une turbine hydroelectrique, chaufer de l&amp;rsquo;eau pour des serres, &amp;hellip;
+arcomakers www.arcomakers.fr
+association lié au fablab d&amp;rsquo;orleans ayant pour objet la création, la conception et la réalisation de projets personnels ou collectifs dans les domaines comme l&amp;rsquo;éléctronique, l&amp;rsquo;informatique, la mécanique &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

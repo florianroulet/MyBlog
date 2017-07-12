@@ -1,3 +1,9 @@
+---
+title: "20170709 MakerFaireNantes2017"
+date: 2017-07-12T19:56:18Z
+draft: true
+---
+
 # Maker Faire Nantes 2017
 
 ## Open source ecologie
