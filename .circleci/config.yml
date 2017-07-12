@@ -13,7 +13,7 @@ jobs:
           name: "Test Website"
           command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - store_artifacts:
-	  path: /src/public
+	      path: /src/public
       - add_ssh_keys
     deployment:
       production:
