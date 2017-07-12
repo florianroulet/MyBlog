@@ -13,6 +13,5 @@ jobs:
           name: "Test Website"
           command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - deploy:
-          production:
-            branch: master
-            command: git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
+          name: "Deploy"
+          command: git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
