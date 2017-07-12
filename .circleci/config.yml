@@ -13,8 +13,8 @@ jobs:
           name: "Test Website"
           command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - add_ssh_keys
-      - deployment:
-          production:
-            branch: master
-            commands:
-              - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
+    deployment:
+      production:
+        branch: master
+        commands:
+          - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
