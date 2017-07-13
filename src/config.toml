@@ -9,18 +9,6 @@ googleAnalytics = ""
 disqusShortname = ""
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
-
-[params]
-    author = "Roulet Florian"
-    description = "Personal blog powered by Hugo"
-    accent = "red"
-    showBorder = true
-    backgroundColor = "white"
-    font = "Quicksand" # should match the name on Google Fonts!
-    highlight = true
-    highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
-
 [Params]
     tagline = "Florian Roulet's personnal blog"
     description = "Full-stack developer and maker enthusiast based in Tours, FR."
@@ -40,6 +28,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
     cacheBustCSS = false
     cacheBustJS = false
     ajaxFormspree = true
+
+[permalinks]
+    gallery = "/" # Redirect gallery index to home page
+
 
 [[menu.main]]
     name = "About"
