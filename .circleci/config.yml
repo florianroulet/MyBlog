@@ -19,4 +19,6 @@ jobs:
       production:
         branch: master
         commands:
-          - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:gh-pages
+          - git add docs
+          - git commit -m "autocommit from circleci"
+          - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
