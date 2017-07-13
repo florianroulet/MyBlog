@@ -1,0 +1,55 @@
+baseURL = "https://florianroulet.github.io/MyBlog/"
+languageCode = "en-us"
+title = "My super blog !"
+theme = "osprey"
+tags = ["portfolio", "development", "maker", "blog"]
+config = "config.toml"
+canonifyURLS = true
+googleAnalytics = ""
+disqusShortname = ""
+disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
+
+
+[params]
+    author = "Roulet Florian"
+    description = "Personal blog powered by Hugo"
+    accent = "red"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Quicksand" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "solarized-dark"
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+
+[Params]
+    tagline = "Florian Roulet's personnal blog"
+    description = "Full-stack developer and maker enthusiast based in Tours, FR."
+    logoBig = "/images/osprey-logo.png"
+    logoSmall = "/images/osprey-logo.png"
+    favicon = "favicon.ico"
+    opengraphImage = "/images/osprey.png"
+    twitter = "FlorianRoulet"
+    linkedin = ""
+    github = "florianroulet"
+    email = ""
+    googleTagManager = ""
+    highlightJS = true
+    copyright = true
+    credit = true
+    customCSS = false
+    cacheBustCSS = false
+    cacheBustJS = false
+    ajaxFormspree = true
+
+[[menu.main]]
+    name = "About"
+    url  = "/#about"
+    weight = 1
+[[menu.main]]
+    name = "Blog"
+    url  = "/#blog"
+    weight = 2
+[[menu.main]]
+    name = "Contact"
+    url  = "/#contact"
+    weight = 3
