@@ -1,4 +1,0 @@
-baseURL = "https://florianroulet.github.io/MyBlog/"
-languageCode = "en-us"
-title = "My super blog !"
-theme = "beautifulhugo"
