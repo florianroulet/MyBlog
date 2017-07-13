@@ -8,12 +8,12 @@ jobs:
       - checkout
       - run:
           name: "Run Hugo"
-          command: HUGO_ENV=production hugo -v -s src/
+          command: HUGO_ENV=production hugo -v -s src/ -d docs/
       - run:
           name: "Test Website"
-          command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+          command: htmlproofer docs/ --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - store_artifacts:
-          path: /src/public
+          path: docs
       - add_ssh_keys
     deployment:
       production:
