@@ -15,10 +15,16 @@ jobs:
       - store_artifacts:
           path: docs
       - add_ssh_keys
-    deployment:
-      production:
-        branch: master
-        commands:
-          - git add docs
-          - git commit -m "autocommit from circleci"
-          - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
+      - deploy:
+          commands:
+            - git add docs
+            - git commit -m "autocommit from circleci"
+            - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
+
+#    deployment:
+#      production:
+#        branch: master
+#        commands:
+#          - git add docs
+#          - git commit -m "autocommit from circleci"
+#          - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
