@@ -1,15 +1,15 @@
 baseURL = "https://florianroulet.github.io/MyBlog/"
 languageCode = "en-us"
 title = "My super blog !"
-theme = "osprey"
-tags = ["portfolio", "development", "maker", "blog"]
+theme = "hugo-theme-cactus-plus"
+tags = ["developer", "maker", "blog"]
 config = "config.toml"
 canonifyURLS = true
 googleAnalytics = ""
 disqusShortname = ""
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
-[Params]
+[params]
     tagline = "Florian Roulet's personnal blog"
     description = "Full-stack developer and maker enthusiast based in Tours, FR."
     logoBig = "/images/osprey-logo.png"
@@ -29,19 +29,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
     cacheBustJS = false
     ajaxFormspree = true
 
-[permalinks]
-    gallery = "/" # Redirect gallery index to home page
-
-
-[[menu.main]]
-    name = "About"
-    url  = "/#about"
-    weight = 1
-[[menu.main]]
-    name = "Blog"
-    url  = "/#blog"
-    weight = 2
-[[menu.main]]
-    name = "Contact"
-    url  = "/#contact"
-    weight = 3
+[social]
+  twitter-square = "https://twitter.com/FlorianRoulet"
+  github-square = "https://github.com/florianroulet"
