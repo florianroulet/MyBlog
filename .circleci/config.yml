@@ -16,12 +16,9 @@ jobs:
           path: docs
       - add_ssh_keys
       - deploy:
-          command: git config user.email "florianroulet@gmail.com" && git config user.name florian && git add ~/project/docs/ && git commit -m "autocommit from circleci" && git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
-
-#    deployment:
-#      production:
-#        branch: master
-#        commands:
-#          - git add docs
-#          - git commit -m "autocommit from circleci"
-#          - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
+          command: git config user.email "florianroulet@gmail.com" && git config user.name florian && git add ~/project/docs/ && git commit -m "autocommit from circleci"
+    deployment:
+      production:
+        branch: master
+        commands:
+          - git push git@github.com:florianroulet/MyBlog.git $CIRCLE_SHA1:master
